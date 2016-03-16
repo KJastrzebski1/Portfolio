@@ -1,0 +1,164 @@
+/*
+Theme Name: Portfolio Theme
+Author: Krzysztof Jastrzębski
+Template: zerif-lite
+*/
+
+.zerif-copyright-box{
+    display: none;
+}
+body{
+    background-color: #272727;
+   
+}
+html{
+    height: 100%;
+}
+#footer{
+    
+}
+.copyright{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.social{
+    display: none;
+}
+
+.pixeden{
+    
+    background-size: cover !important
+}
+.row{
+    padding-left: 5px;
+    
+}
+.portfolio{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    background-color: white;
+    min-height: calc(100vh - 113px);
+    
+}
+.portfolio .col-sm-4{
+    border-left: 1px black solid;
+    min-height: calc(100vh - 113px);
+    
+}
+@keyframes projhover{
+    from { background-color: gray; color: #E96656; box-shadow: 1px 1px gray; }
+    to {background-color: #E96656; color: white;box-shadow: 1px 1px white;}
+}
+@keyframes projmove{
+    from {
+        top:0px;
+        left:0px;
+        box-shadow: 1px 1px gray;
+    }
+    to {
+        top:-2px;
+        left: -2px;
+        box-shadow: 3px 3px gray;
+    }
+}
+@keyframes titlehover{
+    from {
+        background-color: #E96656;
+        color: white;
+        box-shadow: 1px 1px white; 
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        background-color: #E96656; 
+        color: white;
+        box-shadow: 3px 3px white;
+        left: -1px;
+        top: -1px;
+    }
+}
+.proj{
+    margin-top: 20px;
+    padding: 20px;
+    min-height: 400px;
+    display: block;
+    box-shadow: 3px 3px gray;
+    border: 1px solid lightgray;
+}
+.proj .logo{
+    height:80px;
+}
+.proj:hover{
+    background-color: #272727;
+    color: white;
+    position: relative;
+    animation-name: projmove;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+.proj:hover .my_title{
+    box-shadow: 1px 1px white;
+    animation-name: projhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.proj h2{
+    margin: 0px;
+}
+.proj .my_title:hover{
+    width: 100%;
+    position: relative;
+    animation-name: titlehover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.proj .my_title{
+    display: block;
+    height: 40px;
+    text-align: center;
+    color: #E96656;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px gray;
+}
+.proj a{text-decoration: none;}
+.proj a:link {text-decoration: none; }
+.proj a:visited {text-decoration: none;}
+.proj a:hover {text-decoration: none;}
+.proj a:active {text-decoration: none;}
+
+.proj ul{
+    position: absolute;
+    bottom: 30px;
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: left;
+    margin: 0px;
+    margin-left: 10px;
+}
+.proj ul li{
+    border-bottom: 1px solid gray;
+}
+.proj:hover ul li{
+    border-bottom: 1px solid white;
+}
+.proj .my_mark{
+    color: #E96656;
+    padding: 3px;
+}
+.widget_alt_watch{
+    display: inline-block;
+    padding: 20px;
+}
+
+.widget .widget-title:before{
+    width: 100%;
+}
+
+#footer>div{
+    padding: 0px;
+}
