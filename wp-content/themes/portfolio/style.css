@@ -7,7 +7,7 @@ Template: zerif-lite
 .zerif-copyright-box{
     display: none;
 }
-body{
+#xD{
     background-color: #272727;
    
 }
@@ -31,20 +31,20 @@ html{
     background-size: cover !important
 }
 .row{
-    padding-left: 5px;
-    
+ margin-right: 0px !important;
+margin-left: 0px !important; 
 }
 .portfolio{
     padding-left: 15px;
     padding-right: 15px;
-    border-right: 2px black solid;
+    /*border-right: 2px black solid;
     border-left: 2px black solid;
-    background-color: white;
+    background-color: white;*/
     min-height: calc(100vh - 113px);
     
 }
 .portfolio .col-sm-4{
-    border-left: 1px black solid;
+    /*border-left: 1px black solid;*/
     min-height: calc(100vh - 113px);
     
 }
@@ -81,15 +81,15 @@ html{
     }
 }
 .proj{
+    background-size: cover;
     margin-top: 20px;
     padding: 20px;
     min-height: 400px;
-    display: block;
+    display: none;
     box-shadow: 3px 3px gray;
     border: 1px solid lightgray;
-}
-.proj .logo{
-    height:80px;
+    z-index: 1;
+    position: relative;
 }
 .proj:hover{
     background-color: #272727;
@@ -99,8 +99,31 @@ html{
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     
+    
+}
+.proj img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.proj:hover img{
+    opacity: 0.3;
+}
+.proj .attributes{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.proj:hover .attributes{
+    display: block;
+    z-index: 10;
+    
 }
 .proj:hover .my_title{
+    display: block;
     box-shadow: 1px 1px white;
     animation-name: projhover;
     animation-duration: 0.5s;
@@ -161,4 +184,67 @@ html{
 
 #footer>div{
     padding: 0px;
+}
+
+.navbar-brand{
+    padding: 5px !important;
+    margin-top: 10px;
+}
+
+/*Paralax ================================== */
+.parallel{
+    height: 480px;
+    width: 100%;
+    background-image: url("img/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transbox{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    height: 480px;
+    width: 100%;
+    z-index: 100;
+}
+.parallel h1{
+    position: absolute;
+    left: 0;
+    top: 240px;
+    width: 100%;
+    text-align: center;
+    z-index: 101;
+    opacity: 1.0;
+    
+}
+
+.planet {
+  background-size: cover;
+  left: 50%;
+  position: absolute;
+  top: 35%;
+}
+
+#background_p {
+  
+  width: 100%;
+}
+
+#planet-1 {
+  margin: -75px 0 0 -75px;
+  height: 199px;
+  width: 500px;
+  background-image: url("img/airplane.png");
+  background-size: cover;
+  z-index: 20;
+}
+
+#planet-2 {
+  margin: -100px 0 0 -100px;
+ height: 154px;
+  width: 300px;
+  background-size: cover;
+  background-image: url("img/cloud.png");
+  z-index: 30;
 }

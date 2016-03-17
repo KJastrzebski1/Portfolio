@@ -11,4 +11,9 @@ function theme_enqueue_styles() {
         array( $parent_style )
     );
 }
+function parallax_script(){
+    //wp_enqueue_script('parallax', get_template_directory_uri().'/js/parallax.js');
+    wp_enqueue_script('my_parallax', get_stylesheet_directory_uri().'/js/my_parallax.js');
+}
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+add_action('wp_enqueue_scripts', 'parallax_script');
