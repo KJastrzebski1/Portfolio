@@ -178,10 +178,6 @@ margin-left: 0px !important;
     padding: 20px;
 }
 
-.widget .widget-title:before{
-    width: 100%;
-}
-
 #footer>div{
     padding: 0px;
 }
@@ -248,3 +244,38 @@ margin-left: 0px !important;
   background-image: url("img/cloud.png");
   z-index: 30;
 }
+.widget_proj_slider{
+    
+}
+.carousel-inner .item img
+{
+      width: 70%;
+      margin: auto;
+      
+      
+  }
+  
+  .carousel-inner .item h2{
+      padding-bottom: 20px;
+  }
+  .carousel-inner .item{
+      height: 480px;
+  }
+  .carousel-caption{
+      background-color: rgba(0,0,0, 0.6);
+      font-family: Arial;
+  }
+  .carousel-control{
+      z-index: 100;
+      
+  }
+  .carousel-control.left{
+      margin-left: 0px !important;
+  }
+ .carousel-control .glyphicon-chevron-left, 
+ .carousel-control .glyphicon-chevron-right{
+     
+      color: #E96656;
+      z-index: 105;
+      
+  }

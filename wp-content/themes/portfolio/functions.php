@@ -1,5 +1,6 @@
 <?php
 
+require_once 'proj_slider.php';
 
 function theme_enqueue_styles() {
 
@@ -17,3 +18,7 @@ function parallax_script(){
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 add_action('wp_enqueue_scripts', 'parallax_script');
+function register_slider_widget() {
+    register_widget( 'Slider_Widget' );
+}
+add_action( 'widgets_init', 'register_slider_widget' );

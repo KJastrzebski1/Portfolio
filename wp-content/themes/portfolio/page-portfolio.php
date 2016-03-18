@@ -69,6 +69,9 @@
         
         
     </div>
+    <div class="row" id="sidebar">
+            <?php get_sidebar(); ?>
+        </div>
 </div>
 <script>
     jQuery(document).ready(function(){
