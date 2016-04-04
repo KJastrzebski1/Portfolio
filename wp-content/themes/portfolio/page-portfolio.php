@@ -2,12 +2,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    
 </head>
 </header>
+
 <div class="parallel">
     <div id="background_p" class="layer-0">
         <div class="transbox">
@@ -73,9 +73,5 @@
             <?php get_sidebar(); ?>
         </div>
 </div>
-<script>
-    jQuery(document).ready(function(){
-        jQuery('.proj').fadeIn(2000);
-    });
-</script>
+
 <?php get_footer(); ?>
